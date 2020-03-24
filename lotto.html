@@ -9,6 +9,47 @@
 
 <body>
     <script>
+        const lotto = (min, max) => {
+            return Math.round(Math.random() * (max - min)) + min;
+        }
+        let a1 = lotto(1, 38);
+        let a2 = lotto(1, 38);
+        let a3 = lotto(1, 38);
+        let a4 = lotto(1, 38);
+        let a5 = lotto(1, 38);
+        let a6 = lotto(1, 38);
+        // console.log(`${a1}.${a2}.${a3}.${a4}.${a5}.${a6}`);
+        let a = [a1, a2, a3, a4, a5, a6];
+        a.sort();
+        // let as = a[0];
+        while (a[1] < a[0]) {
+        };
+
+
+        document.write(`${a}`);
+
+
+        // for (let i = 0; i < 6; i++) {
+        //     let a=lotto(1,38);
+        //     while(a=a){
+        //         lotto(1,38);
+        //     }           
+        // }
+
+
+
+        console.log(lotto(1, 8));
+
+
+
+
+
+        // const rand = (min, max) => {
+        //     return Math.round(Math.random() * (max - min)) + min;
+        // }
+        // for (let i = 0; i < 100; i++) {
+        //     console.log(rand(50, 99));
+        // }
 
     </script>
 </body>
