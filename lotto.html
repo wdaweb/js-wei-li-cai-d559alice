@@ -12,44 +12,20 @@
         const lotto = (min, max) => {
             return Math.round(Math.random() * (max - min)) + min;
         }
-        let a1 = lotto(1, 38);
-        let a2 = lotto(1, 38);
-        let a3 = lotto(1, 38);
-        let a4 = lotto(1, 38);
-        let a5 = lotto(1, 38);
-        let a6 = lotto(1, 38);
-        // console.log(`${a1}.${a2}.${a3}.${a4}.${a5}.${a6}`);
-        let a = [a1, a2, a3, a4, a5, a6];
-        a.sort();
-        // let as = a[0];
-        while (a[1] < a[0]) {
-        };
 
+        var money = '';
+        var a = 0;
+        for (i = 0; i < 6; i++) {
+            a = lotto(1, 38);
+            if (money.indexOf(a) < 0) {
+                money += a + '&emsp;';
+            }
+            else {
+                i--;
+            }
 
-        document.write(`${a}`);
-
-
-        // for (let i = 0; i < 6; i++) {
-        //     let a=lotto(1,38);
-        //     while(a=a){
-        //         lotto(1,38);
-        //     }           
-        // }
-
-
-
-        console.log(lotto(1, 8));
-
-
-
-
-
-        // const rand = (min, max) => {
-        //     return Math.round(Math.random() * (max - min)) + min;
-        // }
-        // for (let i = 0; i < 100; i++) {
-        //     console.log(rand(50, 99));
-        // }
+        }
+        document.write(`本期威力彩中獎號碼為：${money}<br>特別獎號為：${lotto(1, 8)}`);
 
     </script>
 </body>
