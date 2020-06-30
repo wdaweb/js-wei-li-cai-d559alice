@@ -1,1 +1,1 @@
-js-wei-li-cai-d559alice
+威力彩不重複隨機碼
